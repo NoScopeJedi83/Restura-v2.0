@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restura - About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Our Menu</h1>
+    </section>
+
+    <!-------- Our Menu ------->
+    <section class="menupage">
+        <h1>Cuisine We Offer</h1>
+        <p>Explore our diverse and delicious menu, crafted to satisfy all tastes.</p>
+        <div class="row">
+            <div class="menupage-col">
+                <h2>Restura's Signature Menu</h2>
+                <p>Discover the culinary excellence of Restura with our signature menu. Featuring a delightful selection of appetizers, main courses, and desserts, our menu is crafted to provide an unforgettable dining experience. </p>
+                <img src="image/menu1.png" style="width: 100%;"/>
+            </div>
+            <div class="menupage-col">
+                <h2>Luxury Dining At Its Finest</h2>
+                <p>A variety of dishes, including vegetarian, non-vegetarian as well as and vegan options to tantalize your taste buds. Enjoy the best of our cuisine, designed to tantalize your taste buds and satisfy every craving.</p>
+                <img src="image/menu2.png" style="width: 100%;"/>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <!-- Background Music -->
+    <audio id="background-music" src="Mozart - Lacrimosa but humanity has ended.mp3" autoplay loop></audio>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <p>Made with <a href="#" class="fa fa-heart-o"></a> by Atharv Grover</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("navLinks");
+            if (navLinks.style.display === "block") {
+                navLinks.style.display = "none";
+            } else {
+                navLinks.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
